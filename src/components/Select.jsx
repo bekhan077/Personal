@@ -1,4 +1,7 @@
 import React from "react";
+import imgArcade from "../../public/assets/icon-arcade.svg";
+import imgArvanced from "../../public/assets/icon-advanced.svg";
+import imgPro from "../../public/assets/icon-pro.svg";
 
 const Select = ({ check, handleCheck }) => {
   console.log(check);
@@ -14,17 +17,17 @@ const Select = ({ check, handleCheck }) => {
       </div>
       <div className="flex mt-[40px] gap-4">
         <div className="border pl-[10px] rounded-md py-[20px] w-[135px] hover:border-blue-800">
-          <img src="../../public/assets/icon-arcade.svg" alt="icon-img" />
+          <img src={imgArcade} alt="icon-img" />
           <p className="pt-[20px] text-[#002553] font-semibold">Arcade</p>
           <p className="text-[#AAABB0]">$9/mo</p>
         </div>
         <div className="border pl-[10px] rounded-md py-[20px] w-[135px] hover:border-blue-800">
-          <img src="../../public/assets/icon-advanced.svg" alt="icon-img" />
+          <img src={imgArvanced} alt="icon-img" />
           <p className="pt-[20px] text-[#002553] font-semibold">Advanced</p>
           <p className="text-[#AAABB0]">$12/mo</p>
         </div>
         <div className="border pl-[10px] rounded-md py-[20px] w-[135px] hover:border-blue-800">
-          <img src="../../public/assets/icon-pro.svg" alt="icon-img" />
+          <img src={imgPro} alt="icon-img" />
           <p className="pt-[20px] text-[#002553] font-semibold">Pro</p>
           <p className="text-[#AAABB0]">$15/mo</p>
         </div>

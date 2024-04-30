@@ -1,4 +1,6 @@
 import React from "react";
+import imgSidebar from "../../public/assets/bg-sidebar-desktop.svg";
+
 const Sitebar = ({ active }) => {
   return (
     <div
@@ -6,10 +8,7 @@ const Sitebar = ({ active }) => {
    relative"
     >
       <div className="relative">
-        <img
-          src="../../public/assets/bg-sidebar-desktop.svg"
-          alt="sidebar-img"
-        />
+        <img src={imgSidebar} alt="sidebar-img" />
       </div>
       <div>
         <div className="absolute top-[40px] left-[50px] flex  gap-2 items-center">
